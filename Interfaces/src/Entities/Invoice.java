@@ -2,8 +2,8 @@ package Entities;
 
 public class Invoice {
 
-    public Double basicPayment;
-    public Double tax;
+    private Double basicPayment;
+    private Double tax;
 
     public Invoice(){
 
