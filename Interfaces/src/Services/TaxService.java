@@ -1,5 +1,5 @@
 package Services;
 
-public interface TaxServuce {
-    public Double tax (Double amount);
+public interface TaxService {
+     double tax (Double amount);
 }
