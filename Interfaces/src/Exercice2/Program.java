@@ -1,6 +1,8 @@
 package Exercice2;
 
 import Exercice2.Services.BrazilInterestService;
+import Exercice2.Services.InterestService;
+import Exercice2.Services.UsaInterestService;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -15,7 +17,7 @@ public class Program {
             System.out.print("Months: ");
             int months = input.nextInt();
 
-        BrazilInterestService is = new BrazilInterestService(2.0);
+        InterestService is = new UsaInterestService(1.0);
         double payment = is.payment(amount, months);
         System.out.println("Payment after " + months + " months:" );
             System.out.println(String.format("%.2f", payment));
