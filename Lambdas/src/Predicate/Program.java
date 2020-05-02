@@ -14,7 +14,7 @@ public class Program {
             list.add(new Product("Mouse", 50.0));
             list.add(new Product("Tesoura", 25.0));
 
-            list.removeIf(Product::productPredicate);
+            list.removeIf(p -> p.getPrice() >= 100.0);
 
             for (Product p : list) {
                 System.out.println(p);
