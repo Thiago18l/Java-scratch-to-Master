@@ -1,7 +1,7 @@
+import Entities.MyComparator;
 import Entities.Product;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Program {
@@ -11,7 +11,7 @@ public class Program {
         products.add(new Product("Tv", 900.0));
         products.add(new Product("Notebook", 1200.00));
 
-        Collections.sort(products);
+        products.sort(new MyComparator());
         for (Product p : products) {
             System.out.println(p);
         }
