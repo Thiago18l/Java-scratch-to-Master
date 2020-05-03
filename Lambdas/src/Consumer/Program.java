@@ -17,10 +17,8 @@ public class Program {
         list.add(new Product("Mouse", 50.0));
         list.add(new Product("Tesoura", 25.0));
         double factor = 1.1;
-        Consumer<Product> consumer = product -> {
-          product.setPrice(product.getPrice() * factor);
-        };
-            list.forEach(consumer);
+
+            list.forEach(product -> product.setPrice(product.getPrice() * factor));
             list.forEach(System.out::println);
     }
 }
