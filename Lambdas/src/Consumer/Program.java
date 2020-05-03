@@ -15,7 +15,7 @@ public class Program {
         list.add(new Product("Notebook", 1200.0));
         list.add(new Product("Mouse", 50.0));
         list.add(new Product("Tesoura", 25.0));
-            list.forEach(Product::staticPriceUpdate);
+            list.forEach(Product::updatePriceUpdater);
             list.forEach(System.out::println);
     }
 }
